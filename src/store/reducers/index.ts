@@ -1,0 +1,1 @@
+export { addNewUser, removeUser, default as userReducer } from './user.slice'
