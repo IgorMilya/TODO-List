@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "tsc && rsbuild build",
-    "server-json": "json-server -w server/db.json -p 5000",
     "preview": "rsbuild preview",
     "types": "tsc --noEmit"
   },
