@@ -6,7 +6,7 @@ const SignUpPage: FC = () => {
 
   return (
     <div className="w-full h-screen bg-background flex justify-center items-center">
-      <div className="w-[550px] border border-gray-300 shadow-md rounded-lg p-[40px]">
+      <div className="w-[550px] border border-gray-300 shadow-md rounded-lg p-10">
       <AuthForm title="Sign Up" isNotLogin/>
       </div>
     </div>

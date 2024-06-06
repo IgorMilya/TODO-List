@@ -10,7 +10,7 @@ const ErrorMessage: FC<ErrorMessageProps> = ({meta}) => {
   return (
     <>
       {meta.touched && meta.error ? (
-        <p className="text-red-700 ">{meta.error}</p>
+        <p className="text-error">{meta.error}</p>
       ) : null}
     </>
   )

@@ -1,7 +1,10 @@
+import { TodoCreatedAtType } from './todoCreatedAtType'
+
 export type TodoListResponseType = {
-  id: number,
-  userId: number,
+  id: string,
+  uid: string,
   title: string,
   description: string,
-  completed: boolean
+  completed: boolean,
+  createdAt: TodoCreatedAtType
 }

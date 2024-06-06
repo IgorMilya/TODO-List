@@ -10,11 +10,13 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      primary: '#ffd43b',
-      secondary: '#ebebeb',
+      primary: '#ebebeb',
+      secondary: '#ffd43b',
       background: '#fafafa',
+      error: '#df0f0f',
       ...colors,
     },
+
   },
   plugins: [],
 }

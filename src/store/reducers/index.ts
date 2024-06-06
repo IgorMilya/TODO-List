@@ -1,1 +1,1 @@
-export { addNewUser, removeUser, default as userReducer } from './user.slice'
+export { loginUser, logoutUser, default as userReducer } from './user.slice'

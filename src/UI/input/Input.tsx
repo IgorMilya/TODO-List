@@ -16,11 +16,10 @@ const Input: FC<InputProps> = ({ type, placeholder, name, labelText, disabled })
   const [showPassword, setShowPassword] = useState(false)
 
   const validationError = meta.touched && meta.error
-  const errorStyles = validationError ? 'border-red-700 placeholder:text-red-700' : ''
-
+  const errorStyles = validationError ? 'border-error placeholder:text-error' : ''
+  const disabledStyles = disabled && 'border-error'
 
   const toggleShowPassword = () => setShowPassword(!showPassword)
-
 
   return (
     <label>
@@ -28,7 +27,7 @@ const Input: FC<InputProps> = ({ type, placeholder, name, labelText, disabled })
       <div className="relative">
         <input
           placeholder={placeholder}
-          className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 ${errorStyles}`}
+          className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 ${errorStyles} ${disabledStyles}`}
           type={showPassword ? 'text' : type || 'text'}
           {...field}
           disabled={disabled} />

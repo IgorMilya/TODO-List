@@ -1,3 +1,7 @@
-export {Input} from "./input"
-export {Button} from "./button"
-export {ErrorMessage} from "./error-message"
+export { Input } from './input'
+export { Button } from './button'
+export { ErrorMessage } from './error-message'
+export { Checkbox } from './checkbox'
+export { Modal } from './modal'
+export { Textarea } from './textarea'
+export { Loader } from './loader'

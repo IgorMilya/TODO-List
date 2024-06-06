@@ -3,25 +3,29 @@ import { UserType } from 'types'
 
 interface userAction {
   user: UserType
+  auth: string | null
 }
 
 const initialState: userAction = {
   user: {} as UserType,
+  auth: localStorage.getItem("isAuth")
 }
 
 const userSlice = createSlice({
   name: 'userSlice',
   initialState,
   reducers: {
-    addNewUser: (state, action: PayloadAction<UserType>) => {
+    loginUser: (state, action: PayloadAction<UserType>) => {
       state.user = action.payload
+      state.auth = "true"
     },
-    removeUser: (state, action: PayloadAction<UserType>) => {
+    logoutUser: (state) => {
       state.user = {} as UserType
+      state.auth = null
     },
   },
 })
 
-export const { addNewUser, removeUser } = userSlice.actions
+export const { loginUser, logoutUser } = userSlice.actions
 
 export default userSlice.reducer
