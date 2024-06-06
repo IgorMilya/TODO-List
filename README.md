@@ -2,6 +2,7 @@
 
 ## Deployment
 The deployment was implemented via Firebase hosting, however, I encountered with problem in 404 page. Here is a link: [Firebase](https://todolist-40c79.firebaseapp.com)
+
 So, Primary Hosting was implemented via vercel link: [Vercel](https://todo-list-puce-iota.vercel.app)
 
 ## Short documentation
